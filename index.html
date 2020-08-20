@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>User Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="update.js"></script>    
+</head>
+<body>
+    <div class="main-container">
+        <div class="wrap-container">
+            <div>
+                <table class="content-table" id="myTableData" style="cursor: pointer">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                        </tr>
+                    </thead>
+                </table>
+        
+            </div>
+            <div class="button-myForm" id="button_user">
+                <button class="user-form-btn" onclick="javascript:show  ()" type="button" id="formShow">Add User</button>
+            </div>
+            <form id="userForm" class="user-form ">
+                <div class="wrap-input bg1 rs1-wrap-input">
+                    <span class="label-input">FULL NAME *</span>
+                    <input id="name" class="input" type="text" name="name" placeholder="Enter Your Name">
+                </div>
+
+                <div class="wrap-input bg1 rs1-wrap-input">
+					<span class="label-input">Email *</span>
+					<input id="email" class="input" type="text" name="email" placeholder="Enter Your Email ">
+				</div>
+                <div class="container-user-form-btn">
+					<input type ="button" id="add" value="Submit" onclick="Javascript:addRow()" class="user-form-btn">
+				</div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
